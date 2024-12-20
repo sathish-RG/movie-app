@@ -1,5 +1,5 @@
 const API_KEY = '4ec3221c'; // Replace with your actual OMDB API key
-const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
 
 export const searchMovies = async (query, page = 1, type = '') => {
   const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&s=${query}&page=${page}&type=${type}`);
